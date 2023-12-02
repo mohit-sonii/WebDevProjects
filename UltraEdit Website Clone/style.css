@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+}
+
+:root {
+     --headcol: #FFE500;
+     --backcol: black;
+     --white: #fff;
+     --end:#f9f9f9;
+     --hover: aliceblue;
+     --button: #00b6d1;
+}
+
+#header .container {
+     display: flex;
+     width: 90%;
+     height: auto;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     margin: auto;
+     padding: 10px 0;
+     flex-wrap: wrap;
+
+}
+
+#header {
+     justify-content: center;
+     background-color: var(--headcol);
+     position: sticky;
+}
+
+.container .heading {
+     font-size: 21px;
+     font-weight: 700;
+}
+
+.timer {
+
+     display: flex;
+     gap: 8px;
+}
+
+.timer-item {
+     font-size: 13px;
+     font-weight: 500;
+     text-align: center;
+     display: grid;
+}
+
+.timer .time {
+     background-color: var(--backcol);
+     padding: 8px 0px;
+     color: var(--white);
+     min-width: 50px;
+     text-align: center;
+     border-radius: 10px;
+}
+
+.shop-now-button {
+     padding: 8px 18px;
+     font-size: 14px;
+     font-weight: 700;
+     text-decoration: none;
+     color: var(--backcol);
+     border-radius: 5px;
+     background-color: var(--white);
+}
+
+.shop-now-button:hover {
+     background-color: var(--hover);
+}
+
+.label {
+     font-weight: 600;
+}
+
+/*nav items*/
+
+.nav-element ul li,
+a {
+     list-style-type: none;
+     color: var(--backcol);
+
+}
+
+.nav-element ul li {
+     display: flex;
+     align-items: center;
+     gap: 4px;
+     font-weight: 500;
+     font-size: inherit;
+}
+
+.nav-element ul {
+     display: flex;
+     gap: 30px;
+}
+
+nav {
+     padding-top: 15px;
+     display: flex;
+     width: 90%;
+     align-items: center;
+     justify-content: space-between;
+     margin: auto;
+}
+
+#main {
+     justify-content: center;
+     width: 100%;
+}
+
+.image img {
+     width: 200px;
+     justify-self: flex-start;
+}
+
+/*image and main heading*/
+
+section {
+     padding-top: 25px;
+     margin: auto;
+     width: 80%;
+     display: flex;
+
+}
+
+section .section-for-content {
+     width: 62%;
+     margin: 65px;
+}
+
+.logo-for-heading img {
+     width: 70px;
+}
+
+.logo-for-heading {
+     display: flex;
+     font-size: 42px;
+     font-weight: 400;
+     gap: 10px;
+     align-items: center;
+}
+
+#section h4 {
+     padding-top: 20px;
+     font-size: 21px;
+     font-weight: 400;
+     text-wrap: wrap;
+}
+
+.section-for-content a {
+     text-decoration: underline;
+     font-weight: 400;
+}
+
+.section-for-content .cta {
+     display: flex;
+     gap: 20px;
+     padding-top: 30px;
+     width: 100%;
+}
+
+.cta button {
+     padding: 15px 40px;
+     font-size: 18px;
+     font-weight: 700;
+     border-radius: 10px;
+}
+
+.download button {
+     color: var(--white);
+     background-color: var(--button);
+     border: none;
+}
+
+.download button:hover {
+     cursor: pointer;
+}
+
+.download button h5 {
+     font-size: 12px;
+     font-weight: 400;
+}
+
+.Buy-now button {
+     background-color: var(--white);
+     border: 2px solid var(--backcol);
+     height: 100%;
+     width: 100%;
+}
+
+.Buy-now button:hover {
+     background-color: var(--hover);
+     cursor: pointer;
+}
+
+.section-for-content p {
+     padding-top: 20px;
+     font-size: 15px;
+}
+
+.image-for-section img {
+     width: 350px;
+}
+
+/*second section styles*/
+
+#second-section {
+     display: flex;
+     flex-wrap: wrap;
+     width: 80%;
+     justify-content: center;
+}
+
+.second-section-container {
+     width: 100%
+}
+
+.second-section-container>h4 {
+     text-align: center;
+     font-size: 25px;
+     padding-bottom: 25px;
+     ;
+     font-weight: 700;
+     color: var(--backcol);
+}
+
+.second-section-content {
+     display: flex;
+     justify-content: space-around;
+     height: 160px;
+
+}
+
+.second-section-content .awards {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+}
+
+.box {
+     display: flex;
+     text-align: center;
+     width: 110px;
+     height: 100px;
+     background-color: gainsboro;
+     border: 2px solid gray;
+     box-sizing: border-box;
+     border-radius: 5px;
+     align-items: center;
+     color: var(--backcol);
+     font-weight: 600;
+     font-size: 15px;
+     justify-content: center;
+}
+
+.ratings {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.ratings img {
+     width: 123px;
+     height: 23px;
+
+}
+
+.ratings img,
+.des,
+h5,
+.benefit,
+.review {
+     display: flex;
+     justify-content: center;
+     padding-top: 5px;
+}
+
+.ratings .des,
+.benefit,
+.review {
+     font-size: 16px;
+     font-weight: 700;
+}
+
+.ratings h5 {
+     font-size: 13px;
+     font-weight: 300;
+}
+
+.ratings .review {
+     color: var(--button);
+}
+
+.ratings .benefit {
+     width: 200px;
+}
+
+/*third section*/
+#third-section {
+     background-color: var(--headcol);
+     width: 100%;
+     padding: 12px;
+     margin-top: 50px;
+     display: flex;
+     height: max-content;
+     justify-content: center;
+}
+
+#third-section h5 {
+     font-size: 23px;
+     font-weight: 700;
+}
+
+
+
+/*fourth section*/
+#fourth-section {
+     display: flex;
+     padding: 80px;
+     width: 80%;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#fourth-section .first,
+.second,
+.third,
+.fourth {
+     width: 17%;
+     height: max-content;
+     word-wrap: break-word;
+     text-align: center;
+}
+
+#fourth-section h5 {
+     font-size: 13px;
+     font-weight: 700;
+}
+
+#fourth-section h6 {
+     font-weight: 400;
+     font-size: 12px;
+     padding: 6px 0;
+}
+
+#fourth-section .second img {
+     width: 164px;
+}
+
+
+
+/*fifth section*/
+#fifth-section {
+     display: flex;
+     margin: auto;
+     width: 80%;
+     flex-direction: column;
+     justify-content: center;
+
+}
+
+#fifth-section .text {
+     flex-direction: column;
+     display: flex;
+     width: 100%;
+     row-gap: 30px;
+     ;
+     justify-content: center;
+     align-items: center;
+}
+
+#fifth-section .text h5 {
+     font-size: 34px;
+     font-weight: 300;
+}
+
+#fifth-section .text h6 {
+
+     font-size: 18px;
+     font-weight: 300;
+}
+
+#fifth-section .content {
+     width: 100%;
+     display: flex;
+     padding-top: 60px;
+     justify-content: space-between;
+}
+
+.content .boxes {
+     width: 150px;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: center;
+     flex-wrap: wrap;
+}
+
+.content img {
+     width: 150px;
+     height: 200px;
+}
+
+#fifth-section .content h5 {
+     font-size: 13px;
+     font-weight: 300;
+
+
+}
+
+.content .download {
+     width: 150px;
+     height: 48px;
+}
+
+.content button {
+     width: 100%;
+     height: 100%;
+     border-radius: 5px;
+     ;
+     text-align: center;
+     font-weight: 500;
+}
+
+/*sixth section*/
+#sixth-section {
+     padding: 8% 0;
+     width: 80%;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}
+
+#sixth-section h4 {
+     display: flex;
+     font-size: 32px;
+     font-weight: 500;
+     justify-content: center;
+}
+
+.reviews-in-test {
+     display: flex;
+     padding: 50px 0;
+     width: 100%;
+     word-wrap: break-word;
+     justify-content: space-between;
+
+}
+
+.reviews-in-test .first-one,
+.second-one {
+     width: 48%;
+}
+
+.reviews-in-test .ik {
+     font-size: 24px;
+     font-weight: 700;
+}
+
+.reviews-in-test .do {
+     font-size: 16px;
+     font-weight: 300;
+     padding: 20px 0;
+     font-style: italic;
+
+}
+
+.reviews-in-test .tin {
+     font-size: 18px;
+     font-weight: 400;
+}
+
+.reviews-in-test .second-one {
+     width: 48%;
+}
+
+.button-sixth {
+     display: flex;
+     justify-content: center;
+}
+
+.button-sixth button , .contact button {
+     width: 510px;
+     height: 48px;
+     background-color: var(--button);
+     font-weight: 600;
+     font-size: 14px;
+     border-radius: 10px;
+     border: none;
+     color: var(--white);
+}
+
+
+/*footer*/
+footer{
+     display:flex;
+     justify-content: center;
+     width:100%;
+     flex-direction: column;
+     background-color: var(--end);
+     padding:100px 0;
+
+}
+footer .end{
+margin:auto;
+     width:80%;
+     display:flex;
+     justify-content:space-between;
+}
+footer h4{
+     font-size:16px;
+     font-weight: 700;
+     margin-bottom: 20px;;
+
+}
+footer .items{
+     font-size:14px;
+     font-weight: 300; 
+     display:flex;
+     flex-direction:column;
+     
+}
+.items a{
+     font-size:13px;
+     padding-bottom: 2px;
+}
+.contact{
+     display:flex;
+     gap:15px;
+     flex-direction:column;
+}
+.contact h6{
+     font-size: 14px;
+     font-weight: 400;
+}
+.contact input{
+    padding: 12px 0 12px 0;
+     border-radius: 5px;
+     width:100%;
+     
+     border:1px solid rgb(175, 171, 171);
+     background-color:var(--white);
+}
+.contact button{
+     width:100%;
+}
+.end .language,.user,.general,.contact{
+     width:25%;
+}
+::placeholder{
+     padding-left:5px;
+}
+
+footer .company{
+     display:flex;
+     width:80%;
+     margin:auto;
+     padding-top:50px ;
+     justify-content:space-between;
+}
+.company .about-company img{
+     width:140px;
+}
+.company .about-company h3{
+     font-size:12px;
+     font-weight: 300;
+}
+footer .company .right img{
+     width:24px;
+     height: 24px;
+}
+.right{
+     display:flex;
+     gap:12px;
+}
