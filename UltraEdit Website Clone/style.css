@@ -29,10 +29,10 @@
 
 }
 
-#header {
-     justify-content: center;
+#header {  
      background-color: var(--headcol);
-     position: sticky;
+     position:sticky;
+     top:0;
 }
 
 .container .heading {
@@ -41,7 +41,6 @@
 }
 
 .timer {
-
      display: flex;
      gap: 8px;
 }
@@ -210,7 +209,7 @@ section .section-for-content {
      width: 350px;
 }
 
-/*second section styles*/
+/* revies section styles*/
 
 #second-section {
      display: flex;
@@ -227,7 +226,6 @@ section .section-for-content {
      text-align: center;
      font-size: 25px;
      padding-bottom: 25px;
-     ;
      font-weight: 700;
      color: var(--backcol);
 }
@@ -242,7 +240,12 @@ section .section-for-content {
 .second-section-content .awards {
      display: flex;
      gap: 10px;
+     width:68%;
      align-items: center;
+}
+.second-section-content .awards img{
+     width:100%;
+     height:100%;
 }
 
 .box {
